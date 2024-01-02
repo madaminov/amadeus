@@ -1,0 +1,78 @@
+send "IG"
+append "1" to varcount
+append "saveplace" to varscreensend
+//email
+append "email@email.com" to varemailsend
+
+choose "Бронировать или сделать скрин?"{
+	when("Нет, остановиться, сделать скрин и выслать на почту"){
+		append "screensend" to varscreensend
+	}
+	when("Да, тогда данные пассажира"){
+		group{
+			ask "Имя пассажира" assign to varnamepass
+			ask "Фамилия пассажира" assign to varlastnamepass
+			ask "Телефон" assign to varphonepass
+			ask email "Email" assign to varemailpass
+		}
+	}
+}
+ask "Ввод команда рейса AN" assign to varAn
+send varAn
+
+choose "Выбрать класс"{
+	when("S"){
+		call "classS"
+	}
+	when("A"){
+		call "classA"
+	}
+	when("F"){
+		call "classF"
+	}
+	when("Y"){
+		call "classY"
+	}
+	when("B"){
+		call "classB"
+	}
+	when("M"){
+		call "classM"
+	}
+	when("U"){
+		call "classU"
+	}
+	when("K"){
+		call "classK"
+	}
+	when("H"){
+		call "classH"
+	}
+	when("L"){
+		call "classL"
+	}	
+	when("X"){
+		call "classX"
+	}
+	when("Q"){
+		call "classQ"
+	}
+	when("T"){
+		call "classT"
+	}
+	when("E"){
+		call "classE"
+	}
+	when("N"){
+		call "classN"
+	}
+	when("R"){
+		call "classR"
+	}
+	when("G"){
+		call "classG"
+	}
+	when("V"){
+		call "classV"
+	}	
+}

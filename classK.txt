@@ -1,0 +1,58 @@
+capture line:4, column:23, length:2 assign to varClipboardK
+if(varcount >= "11111111111111111111111111111111111111111111111111"){
+	send "IG"	
+	append "1" to varcount	
+	send varAn 
+	call "classK"
+}else{	
+	append varcount + "1" to varcount
+		
+	if(varClipboardK=="KL"){
+		send varAn 
+		call "classK"
+	}
+	if(varClipboardK=="KR"){
+		send varAn 
+		call "classK"
+	}
+	if(varClipboardK=="KC"){
+		send varAn 
+		call "classK"
+	}
+	if(varClipboardK=="KS"){
+		send varAn 
+		call "classK"
+	}
+	if(varClipboardK=="KX"){
+		send varAn 
+		call "classK"
+	}
+	if (varClipboardK=="K0") {
+		send varAn 
+		call "classK"
+	}else {
+		if( varscreensend=="saveplace"){
+			send "SS1K1"
+			capture line:2, column:30, length:3 assign to varHK
+			if(varHK == "HK1"){
+			  call "save"    
+			}else{
+			  send "IG"
+			  send varAn 
+			  call "classK"      
+			} 
+		}else{
+			send "SS1K1"
+			capture line:2, column:30, length:3 assign to varHK
+			if(varHK == "HK1"){
+			  call "screensave"
+			  send "RT"    
+			}else{
+			  send "IG"
+			  send varAn 
+			  call "classK"      
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,6 @@
+send "NM1"	+ varnamepass + "/" + varlastnamepass + " MR"
+send "APM-" + varphonepass
+send "APE-" + varemailpass
+send "WM/FWD/EML " + varemailsend + "/RT"
+send "TKTL"
+send "RFA;ER"

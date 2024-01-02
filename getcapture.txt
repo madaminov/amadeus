@@ -1,0 +1,82 @@
+//B
+capture line:4, column:14, length:2 assign to varClipboardB
+
+//M
+capture line:4, column:17, length:2 assign to varClipboardM
+
+//U
+capture line:4, column:20, length:2 assign to varClipboardU
+
+//K
+capture line:4, column:23, length:2 assign to varClipboardK
+
+//H
+capture line:4, column:26, length:2 assign to varClipboardH
+
+//L
+capture line:4, column:29, length:2 assign to varClipboardL
+
+//X
+capture line:4, column:32, length:2 assign to varClipboardX
+
+//Q
+capture line:4, column:35, length:2 assign to varClipboardQ
+
+//T
+capture line:4, column:38, length:2 assign to varClipboardT
+
+//E
+capture line:4, column:41, length:2 assign to varClipboardE
+
+//N
+capture line:4, column:44, length:2 assign to varClipboardN
+
+//R
+capture line:4, column:47, length:2 assign to varClipboardR
+
+//G
+capture line:4, column:50, length:2 assign to varClipboardG
+
+//V
+capture line:4, column:53, length:2 assign to varClipboardV
+
+
+//A
+//capture line:4, column:17, length:2 assign to varClipboardA
+
+//F
+//capture line:4, column:20, length:2 assign to varClipboardF
+
+//S
+//capture line:4, column:14, length:2 assign to varClipboardS
+
+//Y
+//capture line:4, column:23, length:2 assign to varClipboardY
+
+
+//append varClipboardB + " " to commandline
+//append varClipboardM+ " " to commandline
+//append varClipboardU+ " " to commandline
+//append varClipboardK+ " " to commandline
+//append varClipboardH+ " " to commandline
+//append varClipboardL+ " " to commandline
+//append varClipboardX+ " " to commandline
+//append varClipboardQ+ " " to commandline
+//append varClipboardT+ " " to commandline
+//append varClipboardE+ " " to commandline
+//append varClipboardN+ " " to commandline
+//append varClipboardR+ " " to commandline
+//append varClipboardG+ " " to commandline
+//append varClipboardV to commandline
+
+
+
+
+
+
+
+
+
+
+
+

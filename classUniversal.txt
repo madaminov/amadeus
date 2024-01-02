@@ -1,0 +1,75 @@
+capture line:3, column:15, length:1 assign to varClipboardUnivaersal
+//append varClipboardUnivaersal to commandline
+
+if(varcount >= "11111111111111111111111111111111111111111111111111"){
+    send "IG"  
+  append "1" to varcount  
+  send varAn  + varclassplace
+  call "classUniversal"
+}else{  
+  append varcount + "1" to varcount
+    
+  if(varClipboardUnivaersal=="L"){
+    send varAn  + varclassplace
+    call "classUniversal"
+  }
+  if(varClipboardUnivaersal=="R"){
+    send varAn + varclassplace
+    call "classUniversal"
+  }
+  if(varClipboardUnivaersal=="C"){
+    send varAn + varclassplace
+    call "classUniversal"
+  }
+  if(varClipboardUnivaersal=="S"){
+    send varAn + varclassplace
+    call "classUniversal"
+  }
+  if(varClipboardUnivaersal=="X"){
+    send varAn + varclassplace
+    call "classUniversal"
+  }
+  if(varClipboardUnivaersal=="0") {
+    send varAn + varclassplace
+    call "classUniversal"
+  }else {
+    if( varscreensend=="saveplace"){
+		send "SS1"+ varclassplace + "1"
+		capture line:1, column:1, length:1 assign to varDash
+		if(varDash == "-"){
+		  capture line:3, column:30, length:3 assign to varHK
+		}else{
+		capture line:2, column:30, length:3 assign to varHK
+		}
+		if(varHK == "HK1"){
+			call "save"  
+			//ask "<h3 style='color:red'>Надо нажать Остановка</h3>" assign to varstop
+			call "stop"			
+		}else{
+		  send "IG"
+		  send varAn + varclassplace
+		  call "classUniversal"    
+		}    
+    }else{
+		send "SS1"+ varclassplace + "1"
+		capture line:1, column:1, length:1 assign to varDash
+		if(varDash == "-"){      
+			capture line:3, column:30, length:3 assign to varHK
+		}else{
+		  capture line:2, column:30, length:3 assign to varHK
+		}
+		if(varHK == "HK1"){
+			call "screensave"
+			send "RT"
+			//ask "<h3 style='color:red'>Надо нажать Остановка</h3>" assign to varstop
+			call "stop"
+		}else{
+		  send "IG"
+		  send varAn + varclassplace
+		  call "classUniversal"    
+		}
+    
+    }
+    
+  }
+}

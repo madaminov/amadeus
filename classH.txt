@@ -1,0 +1,58 @@
+capture line:4, column:26, length:2 assign to varClipboardH
+if(varcount >= "11111111111111111111111111111111111111111111111111"){
+	send "IG"	
+	append "1" to varcount	
+	send varAn 
+	call "classH"
+}else{	
+	append varcount + "1" to varcount
+		
+	if(varClipboardH=="HL"){
+		send varAn 
+		call "classH"
+	}
+	if(varClipboardH=="HR"){
+	  send varAn 
+	  call "classH"
+	}
+	if(varClipboardH=="HC"){
+	  send varAn 
+	  call "classH"
+	}
+	if(varClipboardH=="HS"){
+	  send varAn 
+	  call "classH"
+	}
+	if(varClipboardH=="HX"){
+	  send varAn 
+	  call "classH"
+	}
+	if (varClipboardH=="H0") {
+	  send varAn 
+	  call "classH"
+	}else {
+	  if( varscreensend=="saveplace"){
+		send "SS1H1"
+		capture line:2, column:30, length:3 assign to varHK
+		if(varHK == "HK1"){
+		  call "save"    
+		}else{
+		  send "IG"
+		  send varAn 
+		  call "classH"      
+		} 
+	  }else{
+		send "SS1H1"
+		capture line:2, column:30, length:3 assign to varHK
+		if(varHK == "HK1"){
+		  call "screensave"
+		  send "RT"    
+		}else{
+		  send "IG"
+		  send varAn 
+		  call "classH"      
+		}
+	  }
+	  
+	}
+}

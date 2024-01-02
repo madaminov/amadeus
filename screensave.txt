@@ -1,0 +1,1 @@
+send "WM/FWD/EML " + varemailsend + "/RT"
